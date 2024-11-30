@@ -474,7 +474,7 @@ endfunction
 function! neomake#makers#ft#python#ruff() abort
     let maker =  {
         \ 'exe': 'ruff',
-        \ 'args': ['check', '--quiet', '--no-fix', '--output-format', 'text'],
+        \ 'args': ['check', '--quiet', '--no-fix', '--output-format', 'concise'],
         \ 'errorformat': '%E%f:%l:%c: %m',
         \ }
 
